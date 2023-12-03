@@ -1,11 +1,7 @@
+const sortBy = (arr, fn) => {
+    return arr.sort((a,b) => {
+    return         fn(a) - fn(b)
+    })
 
-const nums = [3,0,1];
-const missingNumber = (nums) => {
-    const length = nums.length;
-
-    for (let i = 0; i <= nums.length - 1; i++) {
-        if (nums[i] === length) {
-
-        }
-    }
 }
+console.log(sortBy([{"x": 1}, {"x": 0}, {"x": -1}],  (x) => x.x))
