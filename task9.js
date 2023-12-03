@@ -1,22 +1,14 @@
-const findOdd = (arr) => {
-    const map = {};
-    let res = 0;
-
-    for (const iterator of arr) {
-        if (map[iterator]) { 
-            map[iterator]++;
-        }else {
-            map[iterator] = 1;
+const dup = (arr) => {
+    return arr.map(item => {
+        let str = "";
+        
+        for (let i = 0; i < item.length; i++) {
+            if(item[i] !== item[i + 1]) {
+                str += item[i]
+            }
         }
-    }
-    
-    for (const key in map) {
-        if (map[key] % 2 !== 0) {
-            res = key;
-        }
-    }
-
-    return Number(res)
+        return str
+    })
 }
 
-console.log(findOdd([0,1,0,1,0]));
+console.log(dup(["kelless","keenness"]))
