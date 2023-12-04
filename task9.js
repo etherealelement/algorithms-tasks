@@ -11,4 +11,14 @@ const dup = (arr) => {
     })
 }
 
-console.log(dup(["kelless","keenness"]))
+console.log(dup(["kelless","keenness"]));
+
+
+// render 1, 
+// render 2 1
+// e10
+// e20
+// e30
+// e1r0
+// e2r0
+// e3r0
