@@ -14,3 +14,5 @@ Promise.resolve()
 });
 
 var a = 10;
+
+// 1 then 1catch 2 then
