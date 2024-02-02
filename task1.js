@@ -18,9 +18,9 @@ const transSort = (weight, transports = transportsDefault) => {
     const res = {};
 
     transports.forEach(item => {
-        const count = Math.floor(weight / item);
-        weight -= count * item;
-        res[item] = count;
+        const part = Math.floor(weight / item);
+        weight -= part * item;
+        res[item] = part
     })
 
 
