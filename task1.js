@@ -14,16 +14,14 @@ const transportsDefault = [
 ];
 
 const transSort = (weight, transports = transportsDefault) => {
-
     const res = {};
 
     transports.forEach(item => {
-        const part = Math.floor(weight / item);
-        weight -= part * item;
-        res[item] = part
+        const count = Math.floor(weight / item);
+        weight = weight - count * item
+        console.log(weight);
+        res[item] = count;
     })
-
-
     return res;
 };
 
