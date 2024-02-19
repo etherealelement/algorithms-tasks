@@ -16,3 +16,5 @@ const fetchData = (url, callback) => {
 }
 
 console.log(fetchData("https://example.com/data", ));
+
+
